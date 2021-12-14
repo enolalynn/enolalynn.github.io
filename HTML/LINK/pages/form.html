@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- method =get & post,put ,delete, 
+    get =default /to get data
+    post = safe /run behind
+    put = repair data or something
+    delete = remove data
+
+    label "for" value= input "id"
+    placeholder = sample for user
+    required = must be filled
+
+    name attr to carry data
+    "READONLY" eg.value= 937655789 readonly
+ -->
+ <h1>Student Registration Form</h1>
+    <form action="request.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="stu_name" id="name" placeholder="Alice" required >
+        <br><br>
+        <label for="email" >Email</label>
+        <input type="email" name="stu_email" id="email" placeholder="example@gmail.com" required>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="stu_password" id="password" required>
+        <br><br> 
+        <label for="phone">Phone</label>
+        <input type="number" name="stu_phone" id="phone" required>
+        <br><br> 
+        <label for="passport">Passport</label>
+        <input type="file" accept="image/*" name="stu_passport" id="passport" required>
+        <br><br> 
+        <!-- accept => image/*,.png,.doc, etc... (as filter) -->
+        <label for="phone">Gender</label> <br>
+        <input type="radio"  value="male" name="stu_gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio"  value="female" name="stu_gender" id="female">
+        <label for="male">Female</label>
+        <input type="radio"  value="other" name="stu_gender" id="other">
+        <label for="other">Other</label>
+        <br><br> 
+        <!-- checkbox -->
+        <label for=""> Hobby</label> <br>
+        <input type="checkbox" name="reading" value="reading" id="reading" >
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="cycling" value="cycling" id="cycling" >
+        <label for="reading">Cycling</label>
+        <input type="checkbox" name="travelling" value="travelling" id="travelling" >
+        <label for="travelling">Travelling</label>
+
+        <br><br> 
+        <!-- Address /textarea -->
+        <label for="address">Address</label>
+        <textarea name="stu_address" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
