@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+</body>
+<script>
+alert("Hello JavaScript") 
+document.write("<h1>hello world</h1> ");
+var firstname = "K Khine";
+var Firstname = "Enola";
+var sum = 10 + 400;
+console.log (sum);
+console.log(firstname);
+console.log(Firstname);
+console.log (typeof(firstname));
+//boolean has only true & false 
+var js = true;
+console.log(typeof(js));
+
+//array refer index & start count zero eg, 0,1,2, 
+var array = ['a' , 'b', 'c' ,'0. 1' , '2 ' ,'3'];
+console.log(array[3]);
+
+//object=> key : value;
+var car = { name: 'Toyota', color: 'white' , price: 10000000000000};
+console.log(car.name);
+console.log(typeof(car.price));
+
+var a = 12; //global variable / able to declare repeat
+let b = 10; //block scope variable/ not able to declare repeat
+const c =24; // constant variable
+
+//variable scope / work within {}
+var x = 12;
+if (x == 12){
+    var num1 = 12;
+    let numb2 =15;
+}
+console.log(num1);
+//console.log(num2); //error
+
+//null to check condition
+let d;
+console.log(d);
+
+let e = null;
+console.log(null);
+
+
+
+
+</script>
+</html>
