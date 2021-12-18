@@ -665,39 +665,40 @@
     </div>
     <hr>
     <div align="center" >
-        <h3>Leave a comment......&#9997; </h3>
-        <form  >
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <br> <br>
-            <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="example@gmail.com"  required>
-            <br> <br>
-            <p>Do you like his movies!</p>
-            <input type="radio" id="yes" >
-            <label for="yes"> Yes</label>
-            <input type="radio" id="no" >
-            <label for="no"> No</label>
-            <br> <br>
-            <p>Which one?</p>
-            <input type="checkbox" id="imitationg" >
-            <label for="imitationg"> The Imitation Game</label>
-            <input type="checkbox" id="sherlockh" >
-            <label for="sherlockh"> Sherlock Holmes</label><br>
-            <input type="checkbox" id="drstrange" >
-            <label for="srstrange"> Doctor Strange</label>
-            <input type="checkbox" id="all" >
-            <label for="all"> All</label> 
-            <input type="checkbox" id="others" >
-            <label for="others"> Others</label>
-            
-            
-            <br> <br>
-            <label for="comment">I'd love to hear your thoughts !!!</label>
-            <br> 
-            <textarea name="" id="comment" cols="30" rows="10"></textarea>
-            <br> 
-            <button type="submit" >Send</button>
+        
+        <form action="request.php" method="GET" width="50%" >
+            <fieldset  >
+                <legend align="center"> <h3>Leave a comment......&#9997;</h3> </legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <br> <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="example@gmail.com"  required>
+                <br> <br>
+                <p>Do you like his movies?</p>
+                <input type="radio" name="yesorno" value="yes" checked>Yes
+                <!-- <label for="yes"> Yes</label> -->
+                <input type="radio"  name="yesorno" value="no"  > No
+                <!-- <label for="no"> No</label> -->
+                <br> <br>
+                <p> Which one?</p>
+                <input type="checkbox" id="imitationg" >
+                <label for="imitationg"> The Imitation Game</label>
+                <input type="checkbox" id="sherlockh" >
+                <label for="sherlockh"> Sherlock Holmes</label><br>
+                <input type="checkbox" id="drstrange" >
+                <label for="srstrange"> Doctor Strange</label>
+                <input type="checkbox" id="all" >
+                <label for="all"> All</label> 
+                <input type="checkbox" id="others" >
+                <label for="others"> Others</label>
+                <br> <br>
+                <label for="comment">I'd love to hear your thoughts !!!</label>
+                <br> 
+                <textarea name="text" id="comment" cols="30" rows="10"></textarea>
+                <br> 
+                <button type="submit" >Send</button>
+            </fieldset>
         </form>
     </div>
     <hr>
