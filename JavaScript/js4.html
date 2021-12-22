@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string
+        let fname = " K Khine";
+        let lname = " Lynn";
+        console.log(typeof( fname));
+        console.log(typeof( fname));
+        //console.log(typeof( fname.length);
+        console.log( lname.length);
+
+        let fullname = fname + lname;
+        console.log(fullname);
+        console.log( 'My name is' +fullname);
+
+        console.log(fullname [6]);
+
+        console.log(fullname.toUpperCase());
+        console.log(fullname.toLowerCase());
+        console.log(fullname.substr(5,3)); //(start , number)
+        console.log(fullname.substring(2,6)); //(start , up to )
+
+
+        let hi = "Hello,  Welcome"
+        console.log(hi.trim()); //cut space ,  often use password
+
+        let ser = 'JavaScript is funny';
+        let res = ser.search("is"); //search
+        console.log(res);
+
+        let rep = " I want to visit Yangon";
+        let rep_result = rep.replace('Yangon','Mandalay'); //replace 
+        console.log(rep_result);
+
+        //backtab(`) pro of using ` can enter string
+        //useful when table in html & js  
+        let string = `I am a Zero 
+        to Pro Student`;
+        console.log(typeof(string));
+        console.log(string);
+
+        let fullName = 'K Khine Lynn';
+        console.log(`My Name is ${fullName}`);
+        console.log ('Hello \n JS'); //enter next line
+        console.log( 'Hello \t JS'); // as a use of tabkey 
+        console.log( 'I\'m a programmer'); //use  for (') in sentence
+        console.log( "I'm a programmer"); //but don't need ' withine double qoutes
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

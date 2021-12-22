@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array [],can add multidimensional array
+        let arr = [1,2,3,4];
+        let arr1 = ['a','b','c'];
+        console.log(arr);
+        console.log(arr1);
+        console.log(arr[1]);
+        console.log(arr1[2]);
+
+        let arr2 = ['a','b','c',[1,2,3,4]];
+        console.log(arr2[6]);
+        console.log(arr2);
+
+        let multi = [['a','b','c'],[1,2,3,4] ,[1,'a',3,4] ]
+        console.log(multi [2][1]);
+
+        let fruits = [];
+        fruits[0] = "Apple";
+        fruits[1] = "Orange";
+        fruits[2] = "Mango";
+        fruits[3] = "Grape";
+        console.log(fruits);
+
+        fruits.push('Banana'); //add after last array
+        console.log(fruits);
+        fruits.unshift('Cherry'); //add before first array
+        console.log(fruits);
+
+        fruits.pop();//remove last index
+        console.log(fruits);
+
+        fruits.shift(); //remove first index in array
+        console.log(fruits);
+
+        fruits.sort(); //arrange sort
+        console.log(fruits);
+
+        fruits.reverse();//arrange reverse
+        console.log(fruits);
+
+        let arr_a = [1,2,3,4];
+        let arr_b = ['a','b','c'];
+        let arr_c = arr_a.concat(arr_b);//=...
+        console.log(arr_c);
+        let arr_d = [...arr_a,...arr_b];//=concat
+        console.log(arr_d);
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>
