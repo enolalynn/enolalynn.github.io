@@ -1,0 +1,18 @@
+what is progrmming?
+what is software development?
+i. input => cout / cin
+2. process => business logic => main => seconds=>
+
+hour minute second =>
+3600 seconds => 1 hour : 0 minute : 0 seconds
+7700 seconds => 1 hour : 1 minute : 40 seconds
+
+algorithm =>
+1. accept seconds input from user
+2. to get hours divide seconds with 3600/
+3. to get minute , divide seconds with 3600 and take  remainder % 
+4 . to get minutes , divide seconds from step-3 with 60/
+5.kto ge seconds , divide  second from step-3 with 60 and take remainder %
+
+
+3. output =>
