@@ -40,19 +40,22 @@ nav.navbar ul{
 .navbar{
     height: 90px;
 }
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     letter-spacing: 4px;
     color: #2173a1;
     transition-duration: .5s;
-
+    
 }
+
 
 .img{
     width: 100%;
     height: 800px;
 }
 .background_text{
-    position: absolute;
+    /* position: fixed; */
+    margin-top: -500px;
+    margin-left: 15%;
     top: 350px;
     left: 100px;
 }
@@ -79,7 +82,7 @@ nav.navbar ul{
     background-color: #2173a1;
 }
 .header{
-    margin: 40px;
+    margin:  400px 40px 4px 40px;
     text-align: center;
 }
 .divided{
@@ -126,30 +129,18 @@ nav.navbar ul{
     margin-top: 30px;
     margin-bottom: 20px;
 }
-/* pack */
-
-/* .head_pack{
-    margin-top: 20px;
-    margin-left: 40px;
-}
-.pack{
-    margin-top: 20px;
-    margin-bottom:20px ;
+.container{
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    width: 100%;
-
+    grid-template-columns: auto auto auto auto;
 }
-div.pack h1{
-    text-transform: uppercase;
-
-} */
 .packaging_img {
-    /* margin-top: 20px; */
+    /* margin-top: 10px; */
     border-radius: 15px;
-    max-width: 100%;
+    max-width: 50%;
+    height: auto;
     float: left;
     box-shadow: 0 10px 20px rgb(0, 0, 0, .15) ;
+    margin-right: 30px;
     
     
 
@@ -162,19 +153,25 @@ div.pack h1{
 
 } */
 .packaging{
-    margin-top: 90px;
+    /* margin-top: 90px; */
     margin-left: 100px;
+  text-align: justify;
+}
+.packaging h1{
+    margin-bottom: 30px;
+    /* margin-top: 10px; */
+    padding: 20px;
 
 }
-.packaging h1,p {
-    margin-top: 20px;
+.packaging h2,p {
+    margin-top: 25px;
     margin-bottom: 20px;
 }
 .packaging_text{
-    position: relative;
+    /* position: relative; */
     /* float: right; */
     left: 50px;
-    width: 90%;
+    width: 100%;
 }
 .packaging_header{
     margin-top: 30px;
@@ -185,7 +182,7 @@ div.pack h1{
 }
 .support{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 25% 25% 25% 25% ;
     margin-top: 80px;
     background-color: #e2e7e7;
     padding: 30px 20px 30px 20px ;
@@ -196,10 +193,98 @@ div.pack h1{
     margin-left: 20px;
 
 }
-.footer{
-    background-color: #212529;
-    height: 230px;
+/* .footer{
+    
+
+    width: 100%;
+    position: absolute;
+    background:  #517281;
+
+    color: #fff;
+    padding: 100px 0 30px;
+    /* border-top-left-radius: 125px; */
+    /* font-size: 13px;
+    line-height: 20px;
+} */ */
+.row footer{
+    background-color: #517281 ;
+
 }
+.footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background:  #517281;
+  
+
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+    color: #fff;
+
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position: relative;
+    color: #fff;
+
+}
+.col:nth-last-child(2), .col:nth-last-child(3){
+    flex-basis: 10%;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .15);
+
+}
+hr{
+    width: 90%;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copy {
+   text-align: center;
+   color: #fff;
+   /* padding-left: 30%; */
+   width: 100%;
+
+}
+.underline{
+    width: 100%;
+    height: 3px;
+    background-color: #FFF ;
+    border-radius: 3px ;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
 .nav{
     text-decoration: none;
     display: inline-block;
@@ -207,13 +292,24 @@ div.pack h1{
     color: gray;
     font-weight: bold;
 }
-.footer a:hover{
+nav{
+    position: sticky;
+    top: 0;
+    height: 40px;
+    width: 100%;
+
+}
+.footer a:hover {
     letter-spacing: 4px;
-    color: #2e21a1;
+    color: #7eb3a3;
     transition-duration: .5s;
 
 }
-.design{
+
+.social-icon :hover{
+    color:#7eb3a3 ;
+}
+/* .design{
     color: gray;
     font-weight: bold;
 
@@ -221,11 +317,8 @@ div.pack h1{
 .icon{
     color: gray;
     padding: 20px;   
-}
-.icon :hover{
-    color:white;
-    /* background-color: lightblue; */
-}
+} */
+
             /* shop page */
 .nav_search{
     width: auto;
@@ -255,13 +348,6 @@ div.pack h1{
 
 }
 
-/* .nav_searchbar{
-    float: right;
-} */
-/* .nav_searchbar {
-    display: inline-block; */
-    
-}
  .nav_searchbar button:hover{
     color: white;
     background-color: #2173a1;
@@ -376,7 +462,7 @@ div.pack h1{
 }
 .learn3{
     /* width:25%; */
-    margin: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 20px;
 }
 div.learn2 div{
    grid-column-gap: 1px;
@@ -410,41 +496,16 @@ div.learn2 div{
     margin-left: 10px;
     text-align: center;
 }
-.icon1{
-    color: #360b66;
-    font-weight: bold;
 
-    padding: 20px;   
-}
-.icon1 :hover{
-    color:gray;
-    /* background-color: lightblue; */
-}
-.icon2 :hover{
-    color:gray;
-    /* background-color: lightblue; */
-}
-.footer_about{
-    margin-top: 0px;
-    background-image: url(../Image/purple.jfif);
 
-    width: 100%;
-    height: 150px;
-    padding: 20px;
-}
-.design1{
-    color: #360b66;
-    font-weight: bold;
-
-}
 /* contact */
 .con_left{
     display: block;
     float: left;
     width: 35%;
     background-color:#86A3C3 ;
-    height: 650px;
-    padding-top: 200px;
+    height: 500px;
+    padding-top: 100px;
     text-align: center;
     /* padding-left: 20px; */
     color: white;
@@ -457,13 +518,14 @@ div.learn2 div{
     display: block;
     float: right;
     background-color:#7eb3a3 ;
+    height: 500px;
     width: 65%;
-    height: 700px;
+
     /* color: #86A3C3; */
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
 }
-.con_right h1{
+.con_right h2{
       font-weight: bolder;
       padding: 20px;
       color: white;
@@ -471,12 +533,12 @@ div.learn2 div{
 .con_right input{
     /* font-weight: unset; */
     width: 35%;
-    height: 30px;
+    height: 25px;
 }
 .con_right textarea{
     /* font-weight: unset; */
     width: 35%;
-    height: 200px;
+    height: 100px;
 }
 .con_right textarea , input, button{
     /* font-weight: unset; */
@@ -485,7 +547,7 @@ div.learn2 div{
 }
 .con_right button{
     /* font-weight: unset; */
-    width: 15%;
+    width: 13%;
     height: 28px;
 }
 .con_right button:hover{
@@ -497,4 +559,9 @@ div.learn2 div{
     color: white;
     background-color: #86A3C3;
 
+}
+.enola {
+    margin-top: 45px;
+    font-family: lobster;
+    font-weight: unset;
 }
