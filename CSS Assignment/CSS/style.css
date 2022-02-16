@@ -140,7 +140,8 @@ nav.navbar ul{
     height: auto;
     float: left;
     box-shadow: 0 10px 20px rgb(0, 0, 0, .15) ;
-    margin-right: 30px;
+    margin-right: 40px;
+    margin-bottom: 20px;
     
     
 
@@ -154,7 +155,8 @@ nav.navbar ul{
 } */
 .packaging{
     /* margin-top: 90px; */
-    margin-left: 100px;
+    margin-left: 40px;
+    margin-right: 40PX;
   text-align: justify;
 }
 .packaging h1{
@@ -188,9 +190,10 @@ nav.navbar ul{
     padding: 30px 20px 30px 20px ;
 
 }
-.support_icon p{
+.support p{
     display: inline-block;
-    margin-left: 20px;
+    /* padding: 0px 20px 0px 20px; */
+    margin-left: 30px;
 
 }
 /* .footer{
@@ -309,15 +312,6 @@ nav{
 .social-icon :hover{
     color:#7eb3a3 ;
 }
-/* .design{
-    color: gray;
-    font-weight: bold;
-
-}
-.icon{
-    color: gray;
-    padding: 20px;   
-} */
 
             /* shop page */
 .nav_search{
