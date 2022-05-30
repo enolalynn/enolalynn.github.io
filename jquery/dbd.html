@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynimic Data Biding</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function(){
+            var students = [
+                {name:"Mg Mg",age:22, gender: "male"},
+                {name:"Ma Ma",age:27, gender: "female"},
+                {name:"Mya Mya",age:32, gender: "female"},
+                {name:"U Hla",age:42, gender: "male"}
+            ]
+            var fmstudents = students.filter(row => row.gender =="female")  // refining and filtering selection => (" id/class/tag").filter("class/id");
+                                              // row => cuz looping each row of object in array
+            console.log(students);
+            var data=""
+            $.each(fmstudents,function(i,v){  // i => index of array  ,v => value of array
+
+                data += ` <tr>
+                    <td> ${i+1}</td>
+                    <td>${v.name}</td>
+                    <td>${v.age}</td>
+                    <td>${v.gender}</td>
+                    <td>
+                   <button class="detailbtn" data-id = ${i}>Detail</button>
+                    </td>
+                </tr> `
+            })
+            // $.each(students,function(i,v){  // i => index of array  ,v => value of array
+
+            //             data += ` <tr>
+            //                 <td> ${i}</td>
+            //                 <td>${v.name}</td>
+            //                 <td>${v.age}</td>
+            //                 <td>${v.gender}</td>
+            //             </tr> `
+            //             })
+            $("#mytbody1").html(data)
+
+            //detail btn click event
+                $(".detailbtn").on("click", function(){
+                   var id = $(this).data("id");  //main point
+                   var name = fmstudents[id].name    // cuz looping =>femalestudent
+                   var age = fmstudents[id].age
+                   var gender = fmstudents[id].gender  
+                   alert(`ID no.  ${id +1} , ${name} is ${age} years old, ${gender} `)
+                })
+
+        })
+    </script>
+</head>
+<body>
+    <table border="1" cellpadding="10" cellspacing = "0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="mytbody1">
+                
+        </tbody>
+    </table>
+</body>
+</html>

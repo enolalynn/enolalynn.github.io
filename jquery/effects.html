@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+
+    <script>
+       $(function(param){
+        $("#hidebtn").on("click",function(){
+            $("p").hide(5000);
+        })
+        $("#showbtn").on("click",function(){
+            $("p").show(fast);
+        })
+        $("#togglebtn").on("click",function(){
+            $("p").toggle();
+        })
+        $("#fadebtn").on("click",function(){
+            $("p").fadeTo("slow",0.4);
+        })
+        $("#slidedownbtn").on("click",function(){
+            $("p").slideDown(slow);
+        })
+        $("#movebtn").on("click",function(){
+            $("p").animate({
+                left:'250px'
+            });
+        })
+        $("#chaning").on("click",function(){
+            // $("p").animate({
+            //     left:'250px'
+            // });
+                $("p.myp").on("click",function(param){
+                    
+                })
+
+
+        })
+
+       })
+
+
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Sapiente dicta cum consequatur dolorem aliquam ut suscipit 
+         laudantium dolores odio atque reiciendis porro quis, asperiores 
+         fuga quisquam necessitatibus quaerat recusandae veritatis sunt a
+         periam, est libero! Voluptatibus non blanditiis qui molestiae unde hic laudantium praesentium, rerum facere quidem ullam doloremque nesciunt repellat culpa assumenda delectus? Esse id mollitia quos voluptates? Blanditiis, libero laborum unde necessitatibus nulla quasi consequuntur pariatur dolor itaque laboriosam suscipit nihil ipsam saepe enim. Enim, quas? Recusandae aperiam totam doloremque maiores minus, sunt earum cum magni tenetur quaerat eveniet asperiores aliquid praesentium nesciunt neque voluptatum. Unde voluptatibus aperiam ullam!
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente dicta cum consequatur dolorem aliquam ut suscipit 
+        laudantium dolores odio atque reiciendis porro quis, asperiores 
+        fuga quisquam necessitatibus quaerat recusandae veritatis sunt a
+        periam, est libero! Voluptatibus non blanditiis qui molestiae unde hic laudantium praesentium, rerum facere quidem ullam doloremque nesciunt repellat culpa assumenda delectus? Esse id mollitia quos voluptates? Blanditiis, libero laborum unde necessitatibus nulla quasi consequuntur pariatur dolor itaque laboriosam suscipit nihil ipsam saepe enim. Enim, quas? Recusandae aperiam totam doloremque maiores minus, sunt earum cum magni tenetur quaerat eveniet asperiores aliquid praesentium nesciunt neque voluptatum. Unde voluptatibus aperiam ullam!
+
+   </p>
+    <div style="width: 100px; height: 100px; background-color: red; position: relative;" id="mydiv" ></div>
+    <button id="hidebtn" >hide</button>
+    <button id="showbtn" >Show</button>
+    <button id="togglebtn" >toggle</button>
+    <button id="fadebtn" >FadeTo</button>
+    <button id="slidedownbtn" >slideDown</button>
+
+    <button id="movebtn">Move</button>
+    <button id="chaining">Chaning</button>
+
+
+
+
+</body>
+</html>

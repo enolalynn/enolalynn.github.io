@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <script src="jquery.min.js"></script>
+
+    <script>
+       $(function(param){
+           $("#married").on("click",function(){
+               $("#box").show();
+           })
+           $("#single").on("click",function(){
+               $("#box").hide();
+           })
+
+           $("#submit").on("click",function(){
+               var name = $("#username").val()
+               var age = $("#age").val()
+               var sname = $("#sname").val()
+               var single= $("#single").val()
+               var married= $("#married").val()
+               var text = `${name} is married and ${age} years old.
+               ${name} \'s spouse is ${sname}.`
+               if( $("#single").is(":checked")){
+                    alert( name +' is single!'  )
+               }
+                if($("#married").is(":checked")){
+                    alert(text)
+               }
+               e.preventDefault();
+               
+           })
+       })
+
+    </script>
+
+    <style>
+       form{
+        margin: 200px auto;
+        padding: 20px;
+        background-color: pink;
+        border-radius: 3%;
+        width: 300Px;
+        text-align: center;
+       }
+       input{
+        border: none;
+        border-radius: 2%;
+        background-color: papayawhip;
+
+       }
+    </style>
+
+</head>
+<body>
+    <form action="" >
+        <input type="text" name="username" id="username" placeholder="Name"><br><br>
+        <input type="number" name="age" id="age" placeholder="Age"><br><br>
+        <input type="radio" id="single" name="mstatus" value="single" checked  >
+        <label for="single">Single</label> 
+        <input type="radio" id="married" name="mstatus" value="married">
+        <label for="married">Married</label>
+        <br>
+        <br>
+        <div id="box" style="display: none;">
+            <input type="text" name="spouse" id="sname" placeholder="Spouse name..."> 
+        </div>
+        
+<br>
+        <input type="submit" value="Save" id="submit">
+
+    </form>
+</body>
+</html>
