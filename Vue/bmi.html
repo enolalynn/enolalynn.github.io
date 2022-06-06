@@ -28,7 +28,7 @@
                     // alert(height)
                     var result = 703*(weight/(height*height))
                     // alert(result)
-                    this.result = result
+                    this.result =  Number.parseFloat(result).toFixed(2)
                 }
             }
         })
@@ -42,7 +42,7 @@
         <div class="d-flex flex-row m-3 justify-content-center">
           <form action="" >
             <div class="col-md-12">
-              <input type="number" name="feet" v-model="feet" placeholder="Enter your feet" class="form-control mb-2">
+              <input type="number" name="feet" v-model="feet" placeholder="Enter your ft" class="form-control mb-2">
             </div>
             <div class="col-md-12">
               <input type="number" name="inches" v-model="inches" placeholder="Enter your inches" class="form-control mb-2">
