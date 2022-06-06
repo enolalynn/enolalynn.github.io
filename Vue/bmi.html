@@ -35,20 +35,20 @@
     </script>
 </head>
 <body>
-    <div id="app" class="container">
+    <div id="app" class="container m-3">
       <center>
         
-        <h3 class="text-primary"> BMI Calculator </h3>
+        <h3 class="text-primary m-3"> BMI Calculator </h3>
         <div class="d-flex flex-row m-3 justify-content-center">
           <form action="" >
             <div class="col-md-12">
-              <input type="number" name="feet" v-model="feet" placeholder="Enter your ft" class="form-control mb-2">
+              <input type="number" name="feet" v-model="feet" placeholder=" Height (ft)" class="form-control mb-2">
             </div>
             <div class="col-md-12">
-              <input type="number" name="inches" v-model="inches" placeholder="Enter your inches" class="form-control mb-2">
+              <input type="number" name="inches" v-model="inches" placeholder=" Height (inches)" class="form-control mb-2">
             </div>
             <div class="col-md-12">
-              <input type="number" name="lb" v-model="lb" placeholder="Enter your body weight(pounds)" class="form-control mb-3">
+              <input type="number" name="lb" v-model="lb" placeholder="Body weight (lb)" class="form-control mb-3">
             </div>
             <button @click="calculate" type="button" class="btn btn-primary">Calculate</button>
           </form>
